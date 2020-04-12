@@ -37,6 +37,7 @@ class App extends React.Component {
       todos: [...this.state.todos, newTodo]
     })
   }
+  
 
   toggleTodo = itemId => {
     console.log(itemId)
@@ -73,8 +74,6 @@ class App extends React.Component {
           <TodoForm
             addTodo={this.addTodo}
             clearCompleted={this.clearCompleted}
-            toggleTodo={this.toggleTodo}
-            todos={this.state.todos}
           />
         </div>
         <TodoList 
